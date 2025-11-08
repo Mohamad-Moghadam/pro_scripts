@@ -4,4 +4,4 @@
 # Description: A script to copy data
 # Date Modified: 08/11/2025
 #
-sudo grep -i warn /var/log/messages
+sudo grep -i warn /var/log/messages >> ~/warns.log
