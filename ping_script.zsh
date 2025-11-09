@@ -7,11 +7,13 @@
 echo
 echo "Which ip adress do you wanna ping?"
 read ipad
+echo "How many times do you wanna ping it?"
+read counter
 
-ping -c1 $ipad &> /dev/null
+ping -c$counter $ipad &> /dev/null
 	if [ $? -eq 0 ]
 	then
-	echo "OK!"
+	echo "$ipad IS OK!"
 	else
-	echo "NOT OK"
+	echo "$ipad IS NOT OK"
 	fi
